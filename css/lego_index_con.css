@@ -59,7 +59,7 @@ div.mnWrap>.imgBlack{
     width: 1080px;
 }
 div.mnWrap>.imgBlack>.blackCover{
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.5);
     width: calc((100vw - 1080px) / 2 + 1080px);
     height: 520px;
     position: absolute;
@@ -68,6 +68,10 @@ div.mnWrap>.imgBlack>.blackCover{
     z-index: -5;
     direction: rtl;
 }
+div.mnWrap>.imgBlack>.blackCover:hover{
+    background-color: #fff;
+}
+
 div.mnWrap>.main{
     width: 100%; max-width: 1080px;
     margin: 0 auto;
@@ -136,22 +140,21 @@ div.mnWrap>.main>.texts>nav>button:hover{
 div.content{}
 div.bestc{}
 div.bestc>.section{
-    overflow: hidden;
+    width: 100%;     min-width: 800px;
+    display: flex;
     position: relative;
-    min-width: 800px;
 }
 div.bestc>.section>.article{
-    width: calc(50% - 20px);
-    min-width: 400px;
-    padding: 10px;
-    float: left;
+    width: calc(50% - 20px);     min-width: 400px;
 }
-div.bestc>.section>.article::after{
-    display: block; content: '';
-    clear: both;
+div.bestc>.section>.at1{
+    outline: 1px solid red;
 }
 div.bestc>.section>.at2{
+    outline: 1px solid red;
     position: relative;
+    position: absolute;
+    right: 0;
 }
 div.bestc>.section>.at2>div{
     position: absolute;
@@ -161,6 +164,7 @@ div.bestc>.section>.article>.image{
     background-color: #fcc;
     width: 400px;     height: 400px;
     border-radius: 200px;
+    margin: 0 10px;
 }
 div.bestc>.section>.at1>.image{
     box-shadow: 10px 10px 20px rgba(0,0,0,1);
@@ -169,7 +173,7 @@ div.bestc>.section>.at1>.image{
     position: relative;
 }
 div.bestc>.section>.at1>.image:hover{
-    box-shadow: 0 0 10px #fff, 15px 15px 30px rgba(0,0,0,1);
+    box-shadow: 0 0 10px #000, 15px 15px 30px rgba(0,0,0,1);
     background-size: 500px;
 }
 
@@ -180,7 +184,7 @@ div.bestc>.section>.at2>.image{
     top: 360px;
 }
 div.bestc>.section>.at2>.image:hover{
-    box-shadow: 0 0 10px #fff, 15px 15px 30px rgba(0,0,0,1);
+    box-shadow: 0 0 10px #000, 15px 15px 30px rgba(0,0,0,1);
     background-size: 500px;
 }
 
@@ -198,17 +202,23 @@ div.bestc>.section>.at2>.texts{
     border: 1px solid #fff;
     padding: 40px 40px 120px;
 }
-
 div.bestc>.section>.article>.texts>h4{
     font-weight: 700;
     font-size: 36px;
     line-height: 80px;
 }
+div.bestc>.section>.article>.texts>h4:hover{
+    text-shadow: 0 0 10px #fff;
+}
 div.bestc>.section>.article>.texts>p{
     font-family: 'Noto Sans KR';
     font-weight: 300;
     font-size: 14x;
+    height: 80px;
     overflow: hidden;
+}
+div.bestc>.section>.article>.texts>p:hover{
+    text-shadow: 0 0 5px #fff;
 }
 
 div.bestc>.section>.article>.texts>.btn{
@@ -229,7 +239,6 @@ div.bestc>.section>.article>.texts>.btn>button:hover{
     box-shadow: 0 0 20px #fff, inset 0px 0px 5px #fff;
     font-weight: 500;
     text-shadow: 0 0 5px #fff;
-    background-color: #000;
 }
 
 /* PLAYZONE content */
@@ -246,10 +255,13 @@ div.playzone>.playImg{
     left: 0; right: 0;
     z-index: -10;
 }
-div.playzone>.imgBlack{}
+
+div.playzone>.imgBlack{
+    width: 1080px;
+}
 div.playzone>.imgBlack>.blackCover{
     background-color: rgba(0,0,0,0.3);
-    width: calc();
+    width: calc((100vw - 1080px) / 2 );
     height: 600px;
     position: absolute;
     top: 160px; bottom: 0;
@@ -276,9 +288,9 @@ div.playzone>.btns>button{
     box-shadow: 0 0 10px #fff, inset 0px 0px 10px #fff;
 }
 div.playzone>.btns>button:hover{
-    box-shadow: 0 0 20px #fff, inset 0px 0px 5px #fff;
+    box-shadow: 0 0 20px #fff, inset 0px 0px 20px #fff;
     font-weight: 700;
-    text-shadow: 0 0 10px #fff;
+    text-shadow: 0 0 20px #fff;
 }
 div.playzone>.btns>.btl{}
 div.playzone>.btns>.btr{
@@ -290,7 +302,7 @@ div.playzone>.btns>.btr{
 /* FOOTER */
 div.ftrWrap{
     background-color: #000;
-    padding-top: 40px;
+    padding-top: 80px;
     padding-bottom: 20px;
 }
 div.ftrWrap>.footer{
@@ -391,13 +403,13 @@ div.sitemap>.footer>ul>li:hover{
 /* copyright */
 div.copyR{
     background-color: #000;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 80px;
 }
 div.copyR>p{
     font-family: 'Noto Sans KR';
     font-size: 12px;
-    line-height: 40px;
+    line-height: 20px;
     color: #fff;
     text-align: center;
 }
