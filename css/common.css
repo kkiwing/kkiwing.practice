@@ -1,0 +1,78 @@
+/* common.css */
+@import url('all.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&family=Noto+Serif+KR:wght@300;500;700;900&display=swap');
+
+
+@font-face {
+    font-family: 'smdong';
+    src: url('../fonts/Typo_SsangmunDongB.ttf');
+}
+
+
+body{
+    /* 본문서체를 지정 */
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Noto Sans KR';
+}
+div.content{
+    padding: 160px 0;
+}
+div.content .header{
+    /* width: 1080px; */
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+}
+div.content .header h3{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+}
+div.content .header p{}
+div.content .section::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+div.content .section{
+    /* width: 1080px; */
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+div.content .section h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+}
+div.content .section h5{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
+}
+div.content .section h6{}
+div.content .section p{
+    overflow: hidden;
+}
+div.content .section nav{
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.mt10{margin-top: 10px !important;}
+.mt20{margin-top: 20px !important;}
+.mt30{margin-top: 30px !important;}
+.mt40{margin-top: 40px !important;}
+.mt50{margin-top: 50px !important;}
+.mt60{margin-top: 60px !important;}
+.mt70{margin-top: 70px !important;}
+.mt80{margin-top: 80px !important;}
+
