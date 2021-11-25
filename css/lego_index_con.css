@@ -45,7 +45,7 @@ div.mnWrap{
     height: 920px;
 }
 div.mnWrap>.mnImg{
-    background-image: url(/img/Curves\ 1.jpg);
+    background-image: url(../img/Curves\ 1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -164,7 +164,7 @@ div.bestc>.section>.article>.image{
 }
 div.bestc>.section>.at1>.image{
     box-shadow: 10px 10px 20px rgba(0,0,0,1);
-    background-image: url(/img/lego_index_best.png);
+    background-image: url(../img/lego_index_best.png);
     background-position: center;
     position: relative;
 }
@@ -175,7 +175,7 @@ div.bestc>.section>.at1>.image:hover{
 
 div.bestc>.section>.at2>.image{
     box-shadow: 10px 10px 20px rgba(0,0,0,1);
-    background-image: url(/img/lego_index_collabo.png);
+    background-image: url(../img/lego_index_collabo.png);
     background-position: center;
     top: 360px;
 }
