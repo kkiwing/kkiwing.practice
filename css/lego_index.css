@@ -10,7 +10,7 @@ div.hdrWrap{
     width: 100%;
 }
 div.hdrWrap>.header{
-    width: 100%;     max-width: 1080px;
+    width: 90%;     max-width: 1080px; min-width: 800px;
     margin: 0 auto;
     color: #fff;
     border-bottom: 1px solid #fff;
@@ -22,6 +22,12 @@ div.hdrWrap>.header>h1{
     width: 65px;
     padding: 20px 0;
 }
+/* 로고(투명배경png)에 glow효과주기 - 미해결
+div.hdrWrap>.header>h1>a>.imglogo:hover{
+    filter: drop-shadow(5px,5px,10px,#fff);
+}
+*/
+
 div.hdrWrap>.header>.nav{
     text-transform: uppercase;
     display: flex;
@@ -45,6 +51,7 @@ div.hdrWrap>.header>.nav>li:hover{
 div.mnWrap{
     position: relative;
     overflow: hidden;
+    min-width: 800px;
     height: 920px;
     padding-bottom: 160px;
 }
@@ -142,12 +149,12 @@ div.content{
 }
 div.bestc{}
 div.bestc>.section{
-    width: 100%;     min-width: 800px;
+    width: 90%;     min-width: 800px;
     display: flex;
     position: relative;
 }
 div.bestc>.section>.article{
-    width: calc(50% - 20px);     min-width: 400px;
+    width: calc(50% - 20px);     min-width: 300px;
 }
 div.bestc>.section>.at1{}
 div.bestc>.section>.at2{
@@ -242,6 +249,7 @@ div.bestc>.section>.article>.texts>.btn>button:hover{
 /* PLAYZONE content *//* PLAYZONE content *//* PLAYZONE content */
 /* PLAYZONE content *//* PLAYZONE content *//* PLAYZONE content */
 div.playzone{
+    min-width: 800px;
     margin-top: 160px;
     position: relative;
 }
@@ -263,6 +271,7 @@ div.playzone>.imgBlack{
 div.playzone>.imgBlack>.bcL{
     background-color: rgba(0,0,0,0.5);
     width: calc((100vw - 1080px) / 2 + 500px );
+    min-width: 400px;
     height: 600px;
     position: absolute;
     z-index: -5;
@@ -271,13 +280,14 @@ div.playzone>.imgBlack>.bcL{
 div.playzone>.imgBlack>.bcR{
     background-color: rgba(0,0,0,0.5);
     width: calc((100vw - 1080px) / 2 + 500px );
+    min-width: 400px;
     height: 600px;
     position: absolute;
     right: 0;
     z-index: -5;
 }
 div.playzone>.btns{
-    width: 1080px;
+    width: 60%; max-width: 920px;
     padding: 160px 0;
     margin: 0 auto;
     position: relative;
@@ -310,6 +320,7 @@ div.playzone>.btns>.btr{
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
 div.ftrWrap{
     background-color: #000;
+    min-width: 800px;
     padding-top: 80px;
     padding-bottom: 20px;
 }
@@ -357,6 +368,7 @@ div.ftrWrap>.footer>ul>li:hover{
 /* footer */
 div.sitemap{
     background-color: #000;
+    min-width: 800px;
 }
 div.sitemap>.footer{
     width: 100%; min-width: 800px; max-width: 1080px;
@@ -411,6 +423,7 @@ div.sitemap>.footer>ul>li:hover{
 /* copyright */
 div.copyR{
     background-color: #000;
+    min-width: 800px;
     padding-top: 40px;
     padding-bottom: 80px;
 }
