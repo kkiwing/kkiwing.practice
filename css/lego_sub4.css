@@ -6,21 +6,22 @@ body{
 div.hdrWrap{
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    width: 100%;
+    width: 100%; min-width: 800px;
+    z-index: 100;
 }
 div.hdrWrap>.header{
-    width: 100%;     max-width: 1080px;
+    width: 100%; min-width: 800px; max-width: 1080px; 
     margin: 0 auto;
     color: #fff;
     border-bottom: 1px solid #fff;
     position: relative;
     display: flex;
-    z-index: 999;
 }
 div.hdrWrap>.header>h1{
     width: 65px;
     padding: 20px 0;
 }
+
 div.hdrWrap>.header>.nav{
     text-transform: uppercase;
     display: flex;
@@ -40,11 +41,11 @@ div.hdrWrap>.header>.nav>li:hover{
 }
 
 
-
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
 div.ftrWrap{
     background-color: #000;
+    min-width: 800px;
     padding-top: 80px;
     padding-bottom: 20px;
 }
@@ -92,6 +93,7 @@ div.ftrWrap>.footer>ul>li:hover{
 /* footer */
 div.sitemap{
     background-color: #000;
+    min-width: 800px;
 }
 div.sitemap>.footer{
     width: 100%; min-width: 800px; max-width: 1080px;
@@ -146,6 +148,7 @@ div.sitemap>.footer>ul>li:hover{
 /* copyright */
 div.copyR{
     background-color: #000;
+    min-width: 800px;
     padding-top: 40px;
     padding-bottom: 80px;
 }

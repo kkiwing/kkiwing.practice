@@ -1,26 +1,95 @@
 body{
     background-color: #1d1d1d;
 }
+
+/* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
+/* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
+div.neonsign{
+    min-width: 800px;
+    font-weight: 300;
+    font-size: 36px;
+    color: #fff;
+    text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 2px #fff;
+    text-align: center;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+.neon:hover{
+    font-weight: 700;
+    color: #000;
+    text-shadow: 0 0 8px #fff, 0 0 12px #fff, 0 0 4px #fff;
+}
+div.main{
+    position: relative;
+    min-width: 800px;
+}
+div.main>.mnimg{
+    height: 85vh;
+}
+div.mn01>.mnimg{
+    background-image: url(../img/lego_sub5_kids.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.mn02>.mnimg{
+    background-image: url(../img/lego_sub5_adults.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.main>.imgBlack{
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 40%; height: 40vh;
+    min-width: 520px;
+    position: absolute;
+    margin: auto;
+    top: 0;bottom: 0;left: 0;right: 0;
+}
+div.main>.btns{}
+div.main>.btns>button{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #fff, inset 0px 0px 10px #fff;
+    background-color: rgba(0,0,0,0);
+    width: 120px; height: 80px;
+    position: absolute;
+    margin: auto;
+    top: 0;bottom: 0;left: 0;right: 0;
+}
+div.main>.btns>button:hover{
+    box-shadow: 0 0 20px #fff, inset 0px 0px 20px #fff;
+    font-weight: 700;
+    text-shadow: 0 0 20px #fff;
+}
+
 /* TOPMENU *//* TOPMENU *//* TOPMENU *//* TOPMENU *//* TOPMENU */
 /* TOPMENU *//* TOPMENU *//* TOPMENU *//* TOPMENU *//* TOPMENU */
 div.hdrWrap{
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    width: 100%;
+    width: 100%; min-width: 800px;
+    z-index: 100;
 }
 div.hdrWrap>.header{
-    width: 100%;     max-width: 1080px;
+    width: 100%; min-width: 800px; max-width: 1080px; 
     margin: 0 auto;
     color: #fff;
     border-bottom: 1px solid #fff;
     position: relative;
     display: flex;
-    z-index: 999;
 }
 div.hdrWrap>.header>h1{
     width: 65px;
     padding: 20px 0;
 }
+
 div.hdrWrap>.header>.nav{
     text-transform: uppercase;
     display: flex;
@@ -40,11 +109,11 @@ div.hdrWrap>.header>.nav>li:hover{
 }
 
 
-
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
 div.ftrWrap{
     background-color: #000;
+    min-width: 800px;
     padding-top: 80px;
     padding-bottom: 20px;
 }
@@ -92,6 +161,7 @@ div.ftrWrap>.footer>ul>li:hover{
 /* footer */
 div.sitemap{
     background-color: #000;
+    min-width: 800px;
 }
 div.sitemap>.footer{
     width: 100%; min-width: 800px; max-width: 1080px;
@@ -146,6 +216,7 @@ div.sitemap>.footer>ul>li:hover{
 /* copyright */
 div.copyR{
     background-color: #000;
+    min-width: 800px;
     padding-top: 40px;
     padding-bottom: 80px;
 }

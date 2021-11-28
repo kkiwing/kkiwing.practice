@@ -3,20 +3,19 @@ body{
 }
 /* TOPMENU *//* TOPMENU *//* TOPMENU *//* TOPMENU *//* TOPMENU */
 /* TOPMENU *//* TOPMENU *//* TOPMENU *//* TOPMENU *//* TOPMENU */
-
 div.hdrWrap{
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    width: 100%;
+    width: 100%; min-width: 800px;
+    z-index: 100;
 }
 div.hdrWrap>.header{
-    width: 90%;     max-width: 1080px; min-width: 800px;
+    width: 100%; min-width: 800px; max-width: 1080px; 
     margin: 0 auto;
     color: #fff;
     border-bottom: 1px solid #fff;
     position: relative;
     display: flex;
-    z-index: 999;
 }
 div.hdrWrap>.header>h1{
     width: 65px;
@@ -249,6 +248,7 @@ div.bestc>.section>.article>.texts>.btn>button:hover{
 /* PLAYZONE content *//* PLAYZONE content *//* PLAYZONE content */
 /* PLAYZONE content *//* PLAYZONE content *//* PLAYZONE content */
 div.playzone{
+    width: 100%;
     min-width: 800px;
     margin-top: 160px;
     position: relative;
@@ -265,12 +265,12 @@ div.playzone>.playImg{
 }
 
 div.playzone>.imgBlack{
-    position: relative;
+    width: 1080px;
     display: flex;
 }
 div.playzone>.imgBlack>.bcL{
     background-color: rgba(0,0,0,0.5);
-    width: calc((100vw - 1080px) / 2 + 500px );
+    width: calc((100vw - 100%) / 2 + 48% );
     min-width: 400px;
     height: 600px;
     position: absolute;
@@ -279,7 +279,7 @@ div.playzone>.imgBlack>.bcL{
 }
 div.playzone>.imgBlack>.bcR{
     background-color: rgba(0,0,0,0.5);
-    width: calc((100vw - 1080px) / 2 + 500px );
+    width: calc((100vw - 100%) / 2 + 48% );
     min-width: 400px;
     height: 600px;
     position: absolute;
