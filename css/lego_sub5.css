@@ -24,10 +24,10 @@ div.main{
     min-width: 800px;
 }
 div.main>.mnimg{
-    height: 85vh;
+    height: 80vh;
 }
 div.mn01>.mnimg{
-    background-image: url(../img/lego_sub5_kids.png);
+    background-image: url(../img/lego_sub5_kids_z.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,13 +40,14 @@ div.mn02>.mnimg{
 }
 
 div.main>.imgBlack{
-    background-color: rgba(0, 0, 0, 0.75);
-    width: 40%; height: 40vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50%; height: 40vh;
     min-width: 520px;
     position: absolute;
     margin: auto;
     top: 0;bottom: 0;left: 0;right: 0;
 }
+
 div.main>.btns{}
 div.main>.btns>button{
     font-size: 16px;
@@ -58,172 +59,14 @@ div.main>.btns>button{
     border: 1px solid #fff;
     box-shadow: 0 0 10px #fff, inset 0px 0px 10px #fff;
     background-color: rgba(0,0,0,0);
-    width: 120px; height: 80px;
+    width: 15%; min-width: 120px; height: 80px;
     position: absolute;
     margin: auto;
     top: 0;bottom: 0;left: 0;right: 0;
+    cursor: pointer;
 }
 div.main>.btns>button:hover{
     box-shadow: 0 0 20px #fff, inset 0px 0px 20px #fff;
     font-weight: 700;
     text-shadow: 0 0 20px #fff;
-}
-
-/* TOPMENU *//* TOPMENU *//* TOPMENU *//* TOPMENU *//* TOPMENU */
-/* TOPMENU *//* TOPMENU *//* TOPMENU *//* TOPMENU *//* TOPMENU */
-div.hdrWrap{
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    width: 100%; min-width: 800px;
-    z-index: 100;
-}
-div.hdrWrap>.header{
-    width: 100%; min-width: 800px; max-width: 1080px; 
-    margin: 0 auto;
-    color: #fff;
-    border-bottom: 1px solid #fff;
-    position: relative;
-    display: flex;
-}
-div.hdrWrap>.header>h1{
-    width: 65px;
-    padding: 20px 0;
-}
-
-div.hdrWrap>.header>.nav{
-    text-transform: uppercase;
-    display: flex;
-    position: absolute;
-    right: 0;
-}
-div.hdrWrap>.header>.nav>li{
-    font-family: 'Noto Sans KR';
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    padding: 25px 10px;
-    margin-left: 20px;
-}
-div.hdrWrap>.header>.nav>li:hover{
-    text-shadow: 0 0 8px #fff, 0 0 12px #fff, 0 0 4px #fff;
-}
-
-
-/* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
-/* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
-div.ftrWrap{
-    background-color: #000;
-    min-width: 800px;
-    padding-top: 80px;
-    padding-bottom: 20px;
-}
-div.ftrWrap>.footer{
-    width: 100%; min-width: 800px; max-width: 1080px;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    position: relative;
-}
-div.ftrWrap>.footer>h1{
-    display: block;
-}
-div.ftrWrap>.footer>h1:hover{
-    box-shadow: 0 0 12px 4px #fff;
-}
-div.ftrWrap>.footer>ol{
-    width: 460px; height: 80px;
-    margin-left: 100px;
-    font-size: 12px;
-    line-height: 20px;
-    text-align: left;
-    padding: 10px 0;
-}
-div.ftrWrap>.footer>ol>li{
-    font-family: 'Noto Sans KR';
-    color: #fff;
-}
-div.ftrWrap>.footer>ul{
-    display: flex;
-    position: absolute;
-    right: 0;
-}
-div.ftrWrap>.footer>ul>li{
-    font-size: 40px;
-    line-height: 80px;
-    color: #fff;
-    padding: 0 10px;
-    cursor: pointer;
-}
-div.ftrWrap>.footer>ul>li:hover{
-    text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 2px #fff;
-}
-
-/* footer */
-div.sitemap{
-    background-color: #000;
-    min-width: 800px;
-}
-div.sitemap>.footer{
-    width: 100%; min-width: 800px; max-width: 1080px;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    border-top: 1px solid #fff;
-}
-div.sitemap>.footer>dl{
-    width: calc(100% / 6);
-    float: left;
-    padding-left: 10px;
-    padding-top: 10px;
-}
-div.sitemap>.footer>dl>dt{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 40px;
-    text-transform: uppercase;
-    color: #fff;
-    cursor: pointer;
-}
-div.sitemap>.footer>dl>dt:hover{
-    text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 2px #fff;
-}
-div.sitemap>.footer>dl>dd{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 20px;
-    color: #ccc;
-    padding-left: 4px;
-}
-div.sitemap>.footer>ul{
-    font-family: 'Noto Sans KR';
-    font-size: 12px;
-    line-height: 40px;
-    color: #fff;
-    text-transform: uppercase;
-    list-style: circle;
-    position: absolute;
-    right: 0;
-}
-div.sitemap>.footer>ul>li{
-    cursor: pointer;
-}
-div.sitemap>.footer>ul>li:hover{
-    text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 2px #fff;
-}
-
-/* copyright */
-div.copyR{
-    background-color: #000;
-    min-width: 800px;
-    padding-top: 40px;
-    padding-bottom: 80px;
-}
-div.copyR>p{
-    font-family: 'Noto Sans KR';
-    font-size: 12px;
-    line-height: 20px;
-    color: #fff;
-    text-align: center;
 }

@@ -113,18 +113,3 @@ div.outlay>.section>.project>.pj01{}
 div.outlay>.section>.project>.pj02{}
 div.outlay>.section>.project>.pj03{}
 div.outlay>.section>.project>.pj04{}
-
-/*add DECO*//*add DECO*//*add DECO*/
-/*add DECO*//*add DECO*//*add DECO*/
-.highlightP{
-    display: inline;
-    box-shadow: inset 0 -10px 0 rgba(164, 147, 255, 0.5);
-}
-.highlightY{
-    display: inline;
-    box-shadow: inset 0 -10px 0 rgba(255, 205, 68, 0.3);
-}
-.highlightB{
-    display: inline;
-    box-shadow: inset 0 -10px 0 rgba(86, 202, 255, 0.3);
-}
