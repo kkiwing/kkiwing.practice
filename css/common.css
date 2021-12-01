@@ -157,7 +157,8 @@ div.ftrWrap>.footer>h1{
     display: block;
 }
 div.ftrWrap>.footer>h1:hover{
-    box-shadow: 0 0 12px 4px #fff;
+    box-shadow: 0 0 20px 2px #fff;
+    transition: 0.3s;
 }
 div.ftrWrap>.footer>ol{
     width: 460px; height: 80px;
