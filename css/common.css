@@ -112,6 +112,9 @@ div.hdrWrap>.header>h1{
     width: 65px;
     padding: 20px 0;
 }
+div.hdrWrap>.header>h1:hover{
+    transform: translate(2px, 2px);
+}
 
 div.hdrWrap>.header>.nav{
     text-transform: uppercase;
@@ -129,6 +132,12 @@ div.hdrWrap>.header>.nav>li{
 }
 div.hdrWrap>.header>.nav>li:hover{
     text-shadow: 0 0 8px #fff, 0 0 12px #fff, 0 0 4px #fff;
+    
+    transform: translate(1px, 1px);
+}
+div.hdrWrap>.header>.nav>li:hover:nth-child(6){
+    transform: rotate(10deg);
+    transition: 0s;
 }
 
 
@@ -179,7 +188,8 @@ div.ftrWrap>.footer>ul>li{
     cursor: pointer;
 }
 div.ftrWrap>.footer>ul>li:hover{
-    text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 2px #fff;
+    text-shadow: 0 0 8px #fff;
+    transform: rotate(5deg);
 }
 
 /* footer */
@@ -235,6 +245,7 @@ div.sitemap>.footer>ul>li{
 }
 div.sitemap>.footer>ul>li:hover{
     text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 2px #fff;
+    transform: translate(1px, 1px);
 }
 
 /* copyright */

@@ -13,7 +13,15 @@ div.neonsign{
     text-align: center;
     margin: 0 auto;
     padding: 160px 0;
+    cursor: crosshair;
 }
+div.neonsign:hover>h3>.zzz{
+    font-weight: 700;
+    color: #000;
+    transition: 0.5s;
+    text-shadow: 20px 10px 8px rgba(255,255,255,0.5), 0 0px 8px #fff, -20px -10px 8px rgba(255,255,255,0.5);
+}
+
 .neon:hover{
     font-weight: 700;
     color: #000;
@@ -49,18 +57,26 @@ div.main>.imgBlack{
     cursor: pointer;
 }
 div.main>.imgBlack:hover{
+    width: 75%;
     background-color: rgba(0, 0, 0, 0.75);
+    transition: 1s;
 }
 div.main>.imgBlack:hover~.btns>button{
     box-shadow: 0 0 20px #fff, inset 0px 0px 20px #fff;
 }
 
-div.main>.btns{}
+div.main>.btns>button:hover{
+    text-shadow: -2px 4px 8px #fff, 2px -2px 8px #fff, 2px 4px 8px #fff, -2px -4px 8px #fff;
+    background-color: rgba(0,0,0,0.5);
+    transition: 0.3s;
+    transform: rotate(5deg);
+}
 div.main>.btns>button{
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
     color: #fff;
+    text-shadow: -2px 0px 4px #fff, 0px 0px 4px #fff, 2px 0px 4px #fff;
     text-transform: uppercase;
     text-align: center;
     border: 1px solid #fff;

@@ -109,9 +109,7 @@ div.mnWrap>.main>.texts>nav>button:hover{
 /* BEST & COLLABO content*//* BEST & COLLABO content*//* BEST & COLLABO content*/
 /* BEST & COLLABO content*//* BEST & COLLABO content*//* BEST & COLLABO content*/
 div.content{}
-div.bestc{
-    outline: 2px solid rebeccapurple;
-}
+div.bestc{}
 div.bestc>.section{
     width: 90%;     min-width: 800px;
     display: flex;
