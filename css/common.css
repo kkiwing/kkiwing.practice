@@ -113,12 +113,6 @@ div.hdrWrap>.header>h1{
     padding: 20px 0;
 }
 
-/* 로고(투명배경png)에 glow효과주기 - 미해결
-div.hdrWrap>.header>h1>a>.imglogo:hover{
-    filter: drop-shadow(5px,5px,10px,#fff);
-}
-*/
-
 div.hdrWrap>.header>.nav{
     text-transform: uppercase;
     display: flex;

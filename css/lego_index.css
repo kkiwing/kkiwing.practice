@@ -32,7 +32,6 @@ div.mnWrap>.imgBlack>.blackCover{
     z-index: -5;
     direction: rtl;
 }
-
 div.mnWrap>.main{
     width: 100%; max-width: 1080px;
     margin: 0 auto;
@@ -40,7 +39,8 @@ div.mnWrap>.main{
 div.mnWrap>.main>.texts{
     text-align: right;
     margin-left: auto;
-    margin-top: 360px;
+    padding-top: 120px;
+    margin-top: 240px;
 }
 div.mnWrap>.main>.texts::after{
     display: block; content: '';
@@ -54,9 +54,22 @@ div.mnWrap>.main>.texts>h6{
     color: #fff;
     text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 2px #fff;
 }
-div.mnWrap>.main>.texts>h6:hover{
+
+div.mnWrap>.main>.texts:hover>h6{
+    text-shadow: 0 0 8px #fff, 0 0 12px #fff, 0 0 4px #fff;
+    transition: 0.5s;
+    text-shadow: 40px -20px 8px rgba(255,255,255,0.5), 0 0px 8px #fff, -20px -10px 8px rgba(255,255,255,0.5);
+}
+div.mnWrap>.main>.texts:hover>h2{
     color: #000;
     text-shadow: 0 0 8px #fff, 0 0 12px #fff, 0 0 4px #fff;
+    transition: 0.5s;
+    text-shadow: 40px 40px 12px rgba(255,255,255,0.5), 0 0px 12px #fff, -50px -20px 20px rgba(255,255,255,0.5);
+}
+div.mnWrap>.main>.texts:hover>h2>span{
+    transition: 0.5s;
+    color: #fff;
+    text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 2px #fff;
 }
 div.mnWrap>.main>.texts>h2{
     font-family: 'smdong';
@@ -65,10 +78,6 @@ div.mnWrap>.main>.texts>h2{
     text-transform: uppercase;
     color: #fff;
     text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 2px #fff;
-}
-div.mnWrap>.main>.texts>h2:hover{
-    color: #000;
-    text-shadow: 0 0 8px #fff, 0 0 12px #fff, 0 0 4px #fff;
 }
 
 div.mnWrap>.main>.texts>h2>span{
@@ -88,7 +97,6 @@ div.mnWrap>.main>.texts>nav>button{
     width: 160px;     height: 40px;
     border: 1px solid #fff;
     box-shadow: 0 0 10px #fff, inset 0px 0px 10px #fff;
-    border-radius: 5px;
     margin: 120px 10px 0;
     cursor: pointer;
 }
@@ -100,10 +108,10 @@ div.mnWrap>.main>.texts>nav>button:hover{
 
 /* BEST & COLLABO content*//* BEST & COLLABO content*//* BEST & COLLABO content*/
 /* BEST & COLLABO content*//* BEST & COLLABO content*//* BEST & COLLABO content*/
-div.content{
-    margin-top: 120px;
+div.content{}
+div.bestc{
+    outline: 2px solid rebeccapurple;
 }
-div.bestc{}
 div.bestc>.section{
     width: 90%;     min-width: 800px;
     display: flex;
@@ -143,6 +151,7 @@ div.bestc>.section>.at2>.image{
     box-shadow: 10px 10px 20px rgba(0,0,0,1);
     background-image: url(../img/lego_index_collabo.png);
     background-position: center;
+    position: absolute;
     top: 360px;
 }
 div.bestc>.section>.at2>.image:hover{
@@ -153,6 +162,7 @@ div.bestc>.section>.at2>.image:hover{
 div.bestc>.section>.article>.texts{
     width: 100%;
     color: #fff;
+    cursor: pointer;
 }
 div.bestc>.section>.at1>.texts{
     border: 1px solid #fff;
@@ -168,10 +178,10 @@ div.bestc>.section>.article>.texts>h4{
     font-weight: 700;
     font-size: 36px;
     line-height: 80px;
-    cursor: pointer;
 }
-div.bestc>.section>.article>.texts>h4:hover{
+div.bestc>.section>.article>.texts:hover>h4{
     text-shadow: 0 0 10px #fff;
+    transition: 0.3s;
 }
 div.bestc>.section>.article>.texts>p{
     font-family: 'Noto Sans KR';
@@ -180,7 +190,7 @@ div.bestc>.section>.article>.texts>p{
     height: 80px;
     overflow: hidden;
 }
-div.bestc>.section>.article>.texts>p:hover{
+div.bestc>.section>.article>.texts:hover>p{
     text-shadow: 0 0 5px #fff;
 }
 div.bestc>.section>.article>.texts>.btn{
@@ -194,7 +204,6 @@ div.bestc>.section>.article>.texts>.btn>button{
     color: #fff;
     width: 160px;     height: 40px;
     border: 2px solid #fff;
-    border-radius: 5px;
     box-shadow: 0 0 5px #fff, inset 0px 0px 5px #fff;
     cursor: pointer;
 }
@@ -209,7 +218,7 @@ div.bestc>.section>.article>.texts>.btn>button:hover{
 div.playzone{
     width: 100%;
     min-width: 800px;
-    margin-top: 160px;
+    margin-top: 80px;
     position: relative;
 }
 div.playzone>.playImg{
@@ -222,51 +231,49 @@ div.playzone>.playImg{
     left: 0; right: 0;
     z-index: -10;
 }
-
-div.playzone>.imgBlack{
-    width: 1080px;
-    display: flex;
-}
+div.playzone>.imgBlack{}
 div.playzone>.imgBlack>.bcL{
     background-color: rgba(0,0,0,0.5);
-    width: calc((100vw - 100%) / 2 + 48% );
-    min-width: 400px;
-    height: 600px;
+    width: 48%;
+    min-width: 400px;    height: 600px;
     position: absolute;
     z-index: -5;
-    direction: rtl;
 }
 div.playzone>.imgBlack>.bcR{
     background-color: rgba(0,0,0,0.5);
-    width: calc((100vw - 100%) / 2 + 48% );
-    min-width: 400px;
-    height: 600px;
+    width: 48%;
+    min-width: 400px;    height: 600px;
     position: absolute;
     right: 0;
     z-index: -5;
 }
 div.playzone>.btns{
-    width: 60%; max-width: 920px;
+    width: 60%; max-width: 1080px;
     padding: 160px 0;
     margin: 0 auto;
     position: relative;
 }
 div.playzone>.btns>button{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 20px;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
     background-color: rgba(0,0,0,0);
-    width: calc((100% / 12 * 5)); height: 280px;
+    width: 40%; height: 280px; min-width: 200px;
     border: 1px solid #fff;
     box-shadow: 0 0 10px #fff, inset 0px 0px 10px #fff;
+    cursor: pointer;
 }
 div.playzone>.btns>button:hover{
     box-shadow: 0 0 20px #fff, inset 0px 0px 20px #fff;
-    font-weight: 700;
-    text-shadow: 0 0 20px #fff;
+    font-weight: 500;
+    text-shadow: -20px 30px 8px #000, 40px -20px 4px #000, 20px 15px 4px #fff,
+    -30px -20px 4px #fff, 0 0 4px #000;
+    background-color: rgba(0,0,0,0.4);
+    font-size: 16px;
+    transition: 0.5s;
 }
 div.playzone>.btns>.btl{}
 div.playzone>.btns>.btr{

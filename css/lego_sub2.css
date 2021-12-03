@@ -18,7 +18,8 @@ div.mainWrap>.main>.header>h2{
     line-height: 80px;
     color: #fff;
     text-transform: uppercase;
-    padding: 160px 0 80px;
+    padding-bottom: 80px;
+    margin-top: 160px;
     position: absolute;
     z-index: 999;
 }
@@ -41,16 +42,10 @@ div.mainWrap>.main>.section>.artGroup>.article{
     position: relative;
     transition: 0.5s;
 }
-
 #p1:checked~.section>.artGroup>.article{left: 0;}
 #p2:checked~.section>.artGroup>.article{left: -100%;}
 #p3:checked~.section>.artGroup>.article{left: -200%;}
 #p4:checked~.section>.artGroup>.article{left: -300%;}
-
-div.mainWrap>.main>.section>.artGroup>.at1{}
-div.mainWrap>.main>.section>.artGroup>.at2{}
-div.mainWrap>.main>.section>.artGroup>.at3{}
-div.mainWrap>.main>.section>.artGroup>.at4{}
 
 div.mainWrap>.main>.section>.artGroup>.article>.mnimage{
     width: 25%; min-width: 800px;
@@ -61,21 +56,24 @@ div.mainWrap>.main>.section>.artGroup>.article>.mnimage{
     float: left;
 }
 div.mainWrap>.main>.section>.artGroup>.article>.i1{background-image: url(../img/lego_sub2_main.png);}
-div.mainWrap>.main>.section>.artGroup>.article>.i2{background-image: url(../img/lego_sub5_kidsz.jpg);}
-div.mainWrap>.main>.section>.artGroup>.article>.i3{background-image: url(../img/lego_extra02.jpg);}
-div.mainWrap>.main>.section>.artGroup>.article>.i4{background-image: url(../img/lego_extra01.jpg);}
+div.mainWrap>.main>.section>.artGroup>.article>.i2{background-image: url(../img/lego_extra10.jpg);}
+div.mainWrap>.main>.section>.artGroup>.article>.i3{background-image: url(../img/lego_extra04.jpg);}
+div.mainWrap>.main>.section>.artGroup>.article>.i4{background-image: url(../img/lego_extra09.jpg);}
 
 div.mainWrap>.main>.section>.artGroup>.article>.mnimage>.texts{
     min-width: 800px; max-width: 1080px;
     margin: 0 auto;
     margin-top: 320px;
+    position: relative;
 }
 div.mainWrap>.main>.section>.artGroup>.article>.mnimage>.texts>.textbox{
     font-family: 'Noto Sans KR';
+    text-align: right;
     background-color: rgba(0,0,0,0.6);
     width: 430px; height: 440px;
-    position: relative;
+    position: absolute; right: 0;
     cursor: pointer;
+    padding-right: 40px;
 }
 div.mainWrap>.main>.section>.artGroup>.article>.mnimage>.texts>.textbox:hover{
     background-color: rgba(0,0,0,0.75);
@@ -89,7 +87,6 @@ div.mainWrap>.main>.section>.artGroup>.article>.mnimage>.texts>.textbox>h3{
     text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 2px #fff;
     text-transform: uppercase;
     padding-top: 40px;
-    padding-left: 40px;
 }
 div.mainWrap>.main>.section>.artGroup>.article>.mnimage>.texts>.textbox:hover>h3{
     text-shadow: 0 -2px 4px #fff, 2px 2px 12px #fff, 0 0 8px #fff;
@@ -99,7 +96,6 @@ div.mainWrap>.main>.section>.artGroup>.article>.mnimage>.texts>.textbox>h5{
     line-height: 40px;
     color: #fff;
     text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 2px #fff;
-    padding-left: 40px;
 }
 div.mainWrap>.main>.section>.artGroup>.article>.mnimage>.texts>.textbox:hover>h5{
     color: #000;
@@ -109,7 +105,6 @@ div.mainWrap>.main>.section>.artGroup>.article>.mnimage>.texts>.textbox>p{
     line-height: 20px;
     color: #fff;
     padding-top: 40px;
-    padding-left: 40px;
 }
 div.mainWrap>.main>.section>.artGroup>.article>.mnimage>.texts>.textbox:hover>p{
     font-weight: 500;
@@ -123,11 +118,17 @@ div.mainWrap>.main>.btns{
     margin: 0 auto;
     position: relative;
     top: -240px;
-    padding-bottom: 40px;
+    padding: 40px 0;
+}
+div.mainWrap>.main>.btns::after{
+    display: block;
+    content: '';
+    clear: both;
 }
 div.mainWrap>.main>.btns>.pagenation{}
 div.mainWrap>.main>.btns>ul{
-    margin-left: 40px;
+    float: right;
+    margin-right: 40px;
 }
 div.mainWrap>.main>.btns>ul::after{
     display: block;
@@ -146,7 +147,7 @@ div.mainWrap>.main>.btns>ul>li{
     text-align: center;
     line-height: 40px;
     float: left;
-    margin-right: 20px;
+    margin-left: 20px;
     cursor: pointer;
 }
 div.mainWrap>.main>.btns>ul>li:hover{
@@ -162,25 +163,24 @@ div.mainWrap>.main>.btns>ul>li>label{
 
 #p1:checked~.btns>.pagenation>li:nth-child(1){
     background-color: rgba(193, 255, 239, 0.3); 
-    color: #000; font-weight: 700;
+    font-weight: 700;
 }
 #p2:checked~.btns>.pagenation>li:nth-child(2){
     background-color: rgba(193, 255, 239, 0.3); 
-    color: #000; font-weight: 700;
+    font-weight: 700;
 }
 #p3:checked~.btns>.pagenation>li:nth-child(3){
     background-color: rgba(193, 255, 239, 0.3); 
-    color: #000; font-weight: 700;
+    font-weight: 700;
 }
 #p4:checked~.btns>.pagenation>li:nth-child(4){
     background-color: rgba(193, 255, 239, 0.3); 
-    color: #000; font-weight: 700;
+    font-weight: 700;
 }
 
 /* MAIN BUTTON *//* MAIN BUTTON *//* MAIN BUTTON */
 div.mainWrap>.main>.btns>.btn{
-    text-align: right;
-    margin-top: 40px;
+    position: relative;
 }
 div.mainWrap>.main>.btns>.btn>button{
     font-family: 'Noto Sans KR';
@@ -194,6 +194,8 @@ div.mainWrap>.main>.btns>.btn>button{
     box-shadow: 0 0 10px #fff, inset 0px 0px 10px #fff;
     cursor: pointer;
     margin: 0 10px;
+    position: absolute;
+    right: 0;bottom: 400px;
 }
 div.mainWrap>.main>.btns>.btn>button:hover{
     box-shadow: 0 0 20px #fff, inset 0px 0px 5px #fff;
@@ -264,11 +266,12 @@ div.setWrap>.set>.article>.image{
     border-radius: 80px;
     box-shadow: 10px 10px 20px rgba(0,0,0,1);
     background-position: center;
+    background-size: 165px;
     cursor: pointer;
 }
 div.setWrap>.set>.article>.image:hover{
     box-shadow: 0 0 10px #000, 15px 15px 30px rgba(0,0,0,1);
-    background-size: 165px;
+    background-size: 170px;
 }
 div.setWrap>.set>.at1>.image{background-image: url(../img/lego_sub2_set01.png);}
 div.setWrap>.set>.at2>.image{background-image: url(../img/lego_sub2_set02.png);}
@@ -406,11 +409,11 @@ div.allWrap>.last>.section>.article>.image{
     cursor: pointer;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 255px;
     box-shadow: 5px 5px 10px rgba(0,0,0,1);
 }
 div.allWrap>.last>.section>.article>.image:hover{
-    background-size: 255px;
+    background-size: 260px;
     box-shadow: 0 0 10px #000, 10px 10px 20px rgba(0,0,0,1);
 }
 div.allWrap>.last>.sec1>.at1>.image{background-image: url(../img/lego_sub2_all01.png);}

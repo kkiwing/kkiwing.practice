@@ -18,7 +18,8 @@ div.mainWrap>.main>.header>h2{
     line-height: 80px;
     color: #fff;
     text-transform: uppercase;
-    padding: 160px 0 80px;
+    padding-bottom: 80px;
+    margin-top: 160px;
     position: absolute;
     z-index: 999;
 }
@@ -162,19 +163,19 @@ div.mainWrap>.main>.btns>ul>li>label{
 
 #p1:checked~.btns>.pagenation>li:nth-child(1){
     background-color: rgba(193, 255, 239, 0.3); 
-    color: #000; font-weight: 700;
+    font-weight: 700;
 }
 #p2:checked~.btns>.pagenation>li:nth-child(2){
     background-color: rgba(193, 255, 239, 0.3); 
-    color: #000; font-weight: 700;
+    font-weight: 700;
 }
 #p3:checked~.btns>.pagenation>li:nth-child(3){
     background-color: rgba(193, 255, 239, 0.3); 
-    color: #000; font-weight: 700;
+    font-weight: 700;
 }
 #p4:checked~.btns>.pagenation>li:nth-child(4){
     background-color: rgba(193, 255, 239, 0.3); 
-    color: #000; font-weight: 700;
+    font-weight: 700;
 }
 
 /* MAIN BUTTON *//* MAIN BUTTON *//* MAIN BUTTON */
@@ -318,7 +319,11 @@ div.saleWrap>.salenow>.image>.black{
 }
 div.saleWrap>.salenow>.image>.black:hover{
     background-color: rgba(0,0,0,0.75);
-    transition: 0.3s;
+    transition: 0.5s;
+}
+div.saleWrap>.salenow>.image>.texts:hover~.black{
+    background-color: rgba(0,0,0,0.75);
+    transition: 0.5s;
 }
 div.saleWrap>.salenow>.image>.btns{
     width: 100%; min-width: 800px; max-width: 1080px;
