@@ -40,8 +40,8 @@ div.mnWrap>.main>.texts{
     text-align: right;
     margin-left: auto;
     padding-top: 120px;
-    padding-right: 40px;
     margin-top: 240px;
+    padding-right: 40px;
 }
 div.mnWrap>.main>.texts::after{
     display: block; content: '';

@@ -30,6 +30,7 @@ div.pagetitle>h2{
 /* content01 *//* content01 *//* content01 */
 div.con1{
     background-color: #ccc;
+    width: 100%; min-width: 800px;
     padding: 80px 0;
 }
 div.con1>.wrap{
@@ -147,6 +148,7 @@ div.con1>.btns>button:hover{
 /* content02 *//* content02 *//* content02 */
 div.con2{
     background-color: #ccc;
+    width: 100%; min-width: 800px;
     padding: 80px 0;
     margin-top: 160px;
 }
@@ -280,6 +282,7 @@ div.con2>.bt>button:hover{
 /* content03 *//* content03 *//* content03 */
 div.con3{
     background-color: #ccc;
+    width: 100%; min-width: 800px;
     padding: 80px 0;
     margin-top: 160px;
 }
@@ -399,14 +402,18 @@ div.con3>.section>.secL>.btns>button:hover{
     color: #fff;
 }
 
-div.con3>.section>.secR{}
+div.con3>.section>.secR{
+    width: 50%;
+}
 div.con3>.section>.secR>div{
     float: right;
 }
 div.con3>.section>.secR>.i2{
     background-image: url(../img/lego_sub4_qna.png);
-    width: 430px; height: 400px;
+    width: 100%; height: 400px;
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     font-weight: 700;
     font-size: 24px;
     line-height: 40px;
@@ -419,7 +426,7 @@ div.con3>.section>.secR>.i2>h3{
 }
 div.con3>.section>.secR>.i2:hover{
     box-shadow: 4px 4px 8px #000;
-    background-size: 440px;
+    background-size: 110%;
     text-decoration: underline; text-underline-position:under;
 }
 

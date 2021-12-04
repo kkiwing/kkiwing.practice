@@ -4,6 +4,7 @@ body{
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
 div.mnWrap{
+    width: 100%; min-width: 800px;
     position: static;
     background-image: url(../img/lego_sub1_main.png);
     background-position: center;
@@ -111,13 +112,16 @@ div.hisWrap>.set{
     justify-content: space-around;
 
 }
-div.hisWrap>.set>.article{}
+div.hisWrap>.set>.article{
+    width: calc((100% / 6 - 20px));
+}
 div.hisWrap>.set>.article>.image{
-    width: 160px; min-width:160px; height: 160px;
-    border-radius: 80px;
+    width: 120px; height: 120px;
+    border-radius: 100px;
     box-shadow: 10px 10px 20px rgba(0,0,0,1);
     background-position: center;
     background-size: 165px;
+    margin: 0 auto;
     cursor: pointer;
 }
 div.hisWrap>.set>.article>.image:hover{
@@ -138,11 +142,12 @@ div.hisWrap>.set>.article>.texts{
     color: #fff;    
     text-align: center;
     cursor: pointer;
+    margin-top: 20px;
 }
 div.hisWrap>.set>.article>.texts>h4{
     font-family: 'smdong';
     font-size: 36px;
-    line-height: 60px;
+    line-height: 40px;
     text-shadow: 0 0 4px #fff;
 }
 div.hisWrap>.set>.article>.texts:hover>h4{
@@ -154,7 +159,7 @@ div.hisWrap>.set>.article>.texts>p{
     font-size: 14px;
     line-height: 20px;
     color: #ccc;
-    width: 160px;     height: 120px;
+    height: 120px;
     overflow: hidden;
 }
 div.hisWrap>.set>.article>.texts:hover>p{
@@ -173,7 +178,7 @@ div.banner>.image{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%; height:200px;
+    width: 100%; min-width: 800px; height:200px;
     cursor: pointer;
 }
 div.banner>.image:hover{
