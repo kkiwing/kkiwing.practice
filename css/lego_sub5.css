@@ -15,17 +15,17 @@ div.neonsign{
     padding: 160px 0;
     cursor: crosshair;
 }
-div.neonsign:hover>h3>.zzz{
-    font-weight: 700;
-    color: #000;
-    transition: 0.5s;
-    text-shadow: 20px 10px 8px rgba(255,255,255,0.5), 0 0px 8px #fff, -20px -10px 8px rgba(255,255,255,0.5);
-}
 
 .neon:hover{
     font-weight: 700;
     color: #000;
     text-shadow: 0 0 8px #fff, 0 0 12px #fff, 0 0 4px #fff;
+}
+div.neonsign:hover>h3>.zzz{
+    font-weight: 700;
+    color: #000;
+    transition: 0.5s;
+    text-shadow: 20px 10px 8px rgba(255,255,255,0.5), 0 0px 8px #fff, -20px -10px 8px rgba(255,255,255,0.5);
 }
 div.main{
     position: relative;
