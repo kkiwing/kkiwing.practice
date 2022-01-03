@@ -92,6 +92,34 @@ div.content .section nav{
 }
 
 
+/* topmenu *//* topmenu *//* topmenu */
+/* topmenu *//* topmenu *//* topmenu */
+div.topWrap{
+    background-color: #000;
+    min-width: 800px;
+}
+div.topWrap .topmenu{
+    width: 100%; min-width: 800px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+div.topWrap .topmenu .nav{
+    display: flex;
+    justify-content: flex-end;
+}
+div.topWrap .topmenu .nav li{
+    font-size: 12px;
+    color: #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+div.topWrap .topmenu .nav li:hover{
+    color: #fff;
+    text-shadow: 0 0px 4px #fff;
+}
+
+
 /* TOPMENU *//* TOPMENU *//* TOPMENU *//* TOPMENU *//* TOPMENU */
 /* TOPMENU *//* TOPMENU *//* TOPMENU *//* TOPMENU *//* TOPMENU */
 div.hdrWrap{

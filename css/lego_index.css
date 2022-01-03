@@ -54,36 +54,39 @@ div.mnWrap>.main>.texts>h6{
     text-transform: uppercase;
     color: #fff;
     text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 2px #fff;
+    transition-property: all;
+    transition-duration: 0.5s;
 }
 
 div.mnWrap>.main>.texts:hover>h6{
     text-shadow: 0 0 8px #fff, 0 0 12px #fff, 0 0 4px #fff;
-    transition: 0.5s;
     text-shadow: 40px -20px 8px rgba(255,255,255,0.5), 0 0px 8px #fff, -20px -10px 8px rgba(255,255,255,0.5);
 }
 div.mnWrap>.main>.texts:hover>h2{
-    color: #000;
-    text-shadow: 0 0 8px #fff, 0 0 12px #fff, 0 0 4px #fff;
-    transition: 0.5s;
-    text-shadow: 40px 40px 12px rgba(255,255,255,0.5), 0 0px 12px #fff, -50px -20px 20px rgba(255,255,255,0.5);
-}
-div.mnWrap>.main>.texts:hover>h2>span{
-    transition: 0.5s;
     color: #fff;
     text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 2px #fff;
+}
+div.mnWrap>.main>.texts:hover>h2>span{
+    color: #000;
+    text-shadow: 0 0 8px #fff, 0 0 12px #fff, 0 0 4px #fff;
+    text-shadow: 40px 40px 12px rgba(255,255,255,0.5), 0 0px 12px #fff, -50px -20px 20px rgba(255,255,255,0.5);
 }
 div.mnWrap>.main>.texts>h2{
     font-family: 'smdong';
-    font-size: 84px;
+    font-size: 36px;
+    text-transform: lowercase;
     line-height: 80px;
-    text-transform: uppercase;
     color: #fff;
-    text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 2px #fff;
+    transition-property: all;
+    transition-duration: 0.5s;
 }
 
 div.mnWrap>.main>.texts>h2>span{
-    font-size: 36px;
-    text-transform: lowercase;
+    font-size: 84px;
+    text-transform: uppercase;
+    text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 2px #fff;
+    transition-property: all;
+    transition-duration: 0.5s;
 }
 div.mnWrap>.main>.texts>nav{
     float: left;
@@ -98,7 +101,7 @@ div.mnWrap>.main>.texts>nav>button{
     width: 160px;     height: 40px;
     border: 1px solid #fff;
     box-shadow: 0 0 10px #fff, inset 0px 0px 10px #fff;
-    margin: 120px 10px 0;
+    margin: 120px 5px 0;
     cursor: pointer;
 }
 div.mnWrap>.main>.texts>nav>button:hover{
@@ -202,7 +205,7 @@ div.bestc>.section>.article>.texts>.btn>button{
     background-color: rgba(0,0,0,0);
     color: #fff;
     width: 160px;     height: 40px;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     box-shadow: 0 0 5px #fff, inset 0px 0px 5px #fff;
     cursor: pointer;
 }
@@ -264,6 +267,8 @@ div.playzone>.btns>button{
     border: 1px solid #fff;
     box-shadow: 0 0 10px #fff, inset 0px 0px 10px #fff;
     cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.5s;
 }
 div.playzone>.btns>button:hover{
     box-shadow: 0 0 20px #fff, inset 0px 0px 20px #fff;
@@ -272,7 +277,6 @@ div.playzone>.btns>button:hover{
     -30px -20px 4px #fff, 0 0 4px #000;
     background-color: rgba(0,0,0,0.4);
     font-size: 16px;
-    transition: 0.5s;
 }
 div.playzone>.btns>.btl{}
 div.playzone>.btns>.btr{

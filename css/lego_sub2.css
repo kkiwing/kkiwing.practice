@@ -318,6 +318,7 @@ div.banner>.image{
     background-size: cover;
     width: 100%; min-width: 800px; height:200px;
     cursor: pointer;
+    transition-duration: 2000ms;
 }
 div.banner>.image:hover{
     box-shadow: inset 0px 0px 80px #000;
@@ -328,6 +329,7 @@ div.banner>.image>.texts{
     margin: 0 auto;
     text-align: right;
     padding-top: 60px; padding-right: 80px;
+    transition-duration: 2000ms;
 }
 div.banner>.image:hover>.texts{
     text-shadow: 0 0 10px #fff;
@@ -466,6 +468,7 @@ div.banner2>.image{
     background-size: cover;
     width: 100%; min-width: 800px;
     cursor: pointer;
+    transition-duration: 2000ms;
 }
 div.banner2>.image:hover{
     box-shadow: inset 0px 0px 80px #000;
@@ -477,6 +480,7 @@ div.banner2>.image>.texts{
     text-align: center;
     padding: 200px 0;
     cursor: pointer;
+    transition-duration: 2000ms;
 }
 div.banner2>.image:hover>.texts{
     text-shadow: 0 0 10px #fff;

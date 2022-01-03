@@ -293,37 +293,40 @@ div.saleWrap>.salenow>.image>.texts>h3{
     line-height: 80px;
     color: rgba(255,255,255,0.5);
     text-transform: uppercase;
+    transition-duration: 3000ms;
 }
 
 div.saleWrap>.salenow>.image>.texts:hover>h3{
-    text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 2px #fff;
+    text-shadow: 0 0 8px #fff, 0 0 2px #fff;
     transition: 0.3s;
 }
 div.saleWrap>.salenow>.image>.texts:hover>h4{
     color: #000;
-    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 2px #fff;
+    text-shadow: 0 0 4px #fff, 0 0 2px #fff;
     transition: 0.3s;
 }
 div.saleWrap>.salenow>.image>.texts>h4{
     font-weight: 700;
     font-size: 24px;
     line-height: 40px;
+    transition-duration: 3000ms;
 }
 div.saleWrap>.salenow>.image>.black{
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.4);
     width: 80%; min-width: 1490px;   height: 400px;
     position: absolute;
     top: 120px; right: 0;
     z-index: 10;
     cursor: pointer;
+    transition-duration: 3000ms;
 }
 div.saleWrap>.salenow>.image>.black:hover{
-    background-color: rgba(0,0,0,0.75);
-    transition: 0.5s;
+    background-color: rgba(0,0,0,0.6);
+    transition: 1s;
 }
 div.saleWrap>.salenow>.image>.texts:hover~.black{
-    background-color: rgba(0,0,0,0.75);
-    transition: 0.5s;
+    background-color: rgba(0,0,0,0.6);
+    transition: 1s;
 }
 div.saleWrap>.salenow>.image>.btns{
     width: 100%; min-width: 800px; max-width: 1080px;
@@ -464,6 +467,7 @@ div.banner>.image{
     background-size: cover;
     width: 100%; min-width: 800px; height: 200px;    
     cursor: pointer;
+    transition-duration: 2000ms;
 }
 div.banner>.image:hover{
     box-shadow: inset 0px 0px 40px #fff;
@@ -474,6 +478,7 @@ div.banner>.image>.texts{
     margin: 0 auto;
     text-align: center;
     padding-top: 30px;
+    transition-duration: 2000ms;
 }
 div.banner>.image:hover>.texts{
     text-shadow: 0 0 10px #fff;

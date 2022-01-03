@@ -411,6 +411,7 @@ div.con3>.section>.secR>div{
 div.con3>.section>.secR>.i2{
     background-image: url(../img/lego_sub4_qna.png);
     width: 100%; height: 400px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -425,7 +426,7 @@ div.con3>.section>.secR>.i2>h3{
     padding-top: 160px;
 }
 div.con3>.section>.secR>.i2:hover{
-    box-shadow: 4px 4px 8px #000;
+    box-shadow: 8px 8px 12px rgba(0,0,0,0.6);
     background-size: 110%;
     text-decoration: underline; text-underline-position:under;
 }

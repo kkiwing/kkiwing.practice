@@ -6,6 +6,7 @@ body{
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
 div.neonsign{
     min-width: 800px;
+    font-family: 'noto sans kr';
     font-weight: 300;
     font-size: 36px;
     color: #fff;
@@ -21,7 +22,7 @@ div.neonsign{
     color: #000;
     text-shadow: 0 0 8px #fff, 0 0 12px #fff, 0 0 4px #fff;
 }
-div.neonsign:hover>h3>.zzz{
+div.neonsign:hover>.zzz{
     font-weight: 700;
     color: #000;
     transition: 0.5s;
@@ -48,17 +49,18 @@ div.mn02>.mnimg{
 }
 
 div.main>.imgBlack{
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     width: 50%; height: 40vh;
     min-width: 520px;
     position: absolute;
     margin: auto;
     top: 0;bottom: 0;left: 0;right: 0;
     cursor: pointer;
+    transition-duration: 3000ms;
 }
 div.main>.imgBlack:hover{
     width: 75%;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.6);
     transition: 1s;
 }
 div.main>.imgBlack:hover~.btns>button{
@@ -69,7 +71,7 @@ div.main>.btns>button:hover{
     text-shadow: -2px 4px 8px #fff, 2px -2px 8px #fff, 2px 4px 8px #fff, -2px -4px 8px #fff;
     background-color: rgba(0,0,0,0.5);
     transition: 0.3s;
-    transform: rotate(5deg);
+    transform: rotate(-5deg);
 }
 div.main>.btns>button{
     font-size: 16px;
